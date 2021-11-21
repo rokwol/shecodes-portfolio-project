@@ -1,12 +1,51 @@
+:root {
+  --primary-color: #430f58;
+  --default-font-family: "Playfair Display", serif;
+  --secondary-font-family: "Open Sans", sans-serif;
+}
+
 h1 {
-  color: blueviolet;
-  font-family: "Open Sans", sans-serif;
+  font-family: var(--default-font-family);
+  font-size: 80px;
+  color: var(--primary-color);
 }
 
-p {
-  font-family: "Playfair Display", serif;
+h2 {
+  font-size: 20px;
 }
 
-img {
-  max-width: 150px;
+p,
+h2 {
+  font-family: var(--secondary-font-family);
+  color: var(--primary-color);
+  line-height: 2;
+  font-weight: normal;
+}
+
+.projects-button {
+  margin: 20px;
+  font-size: 15px;
+  color: var(--primary-color);
+  border: var(--primary-color) 1px solid;
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  transition: all 400ms ease-in-out;
+}
+
+.projects-button:hover {
+  color: aliceblue;
+  background: var(--primary-color);
+}
+
+.introduction {
+  padding: 80px 20px 60px;
+  background: #d5def5;
+  text-align: center;
+}
+
+.introduction p {
+  font-size: 24px;
+
+  margin: 0;
 }
