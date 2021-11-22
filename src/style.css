@@ -20,12 +20,12 @@ h2 {
 }
 
 p {
-  font-size: 14px;
+  font-size: 16px;
   font-family: var(--secondary-font-family);
 }
 
 a {
-  margin: 20px;
+  margin: 20px 10px;
   font-size: 15px;
   text-decoration: none;
   border-radius: 4px;
@@ -53,6 +53,10 @@ img {
   text-align: center;
 }
 
+.introduction h2 {
+  margin-bottom: 40px;
+}
+
 .introduction p {
   font-size: 24px;
   color: var(--primary-color);
@@ -61,57 +65,112 @@ img {
   margin: 0;
 }
 
-.projects-container {
-  padding: 20px;
+.projects-section {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.projects-section,
+.about-description {
   margin-bottom: 20px;
   text-align: center;
 }
 
-.projects-container h2 {
+.projects-section h2 {
   font-size: 25px;
 }
 
-.projects-container p {
+.project-description p {
   margin-bottom: 30px;
   opacity: 0.8;
   line-height: 25px;
+  text-align: left;
 }
 
-.projects-container a {
+.projects-section a,
+.about-description a {
   color: #ffffff;
   background: var(--primary-color);
   margin: auto;
 }
 
-.projects-container a:hover {
+.projects-section a:hover,
+.about-description a:hover {
   color: var(--primary-color);
   background: #ffffff;
   border: var(--primary-color) 1px solid;
 }
 
-@media (max-width: 968px) {
+.about-photo {
+  max-width: 400px;
+}
+
+.about-description-info {
+  padding-top: 60px;
+  padding-left: 40px;
+}
+
+.about-description {
+  padding: 80px 20px 60px;
+}
+
+.about-description h1 {
+  font-size: 60px;
+}
+
+.about-description p {
+  margin-bottom: 30px;
+  opacity: 0.8;
+  line-height: 25px;
+}
+
+@media (max-width: 990px) {
   h1 {
+    font-size: 40px;
+  }
+
+  .about-description h1 {
     font-size: 50px;
   }
 
-  .projects-container h2,
+  .projects-section h2,
   h2 {
-    font-size: 20px;
+    font-size: 18px;
+  }
+
+  .projects-button {
+    font-size: 12px;
+  }
+
+  .about-photo {
+    max-width: 275px;
+    padding: 0;
   }
 
   .introduction {
     padding: 40px 10px 30px;
   }
 
+  .introduction h2 {
+    margin-bottom: 20px;
+  }
+
   .introduction p {
     font-size: 20px;
   }
 
-  .project-container {
-    padding: 0;
+  .projects-section {
+    margin-top: 40px;
+    margin-bottom: 60px;
   }
 
-  .project-description {
+  .project-description p {
+    text-align: center;
+  }
+
+  .about-description-info {
+    margin: auto;
+    padding: 0 10px;
     text-align: center;
   }
 }
