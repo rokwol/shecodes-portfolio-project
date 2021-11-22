@@ -1,5 +1,6 @@
 :root {
   --primary-color: #430f58;
+  --secondary-color: #d5def5;
   --default-font-family: "Playfair Display", serif;
   --secondary-font-family: "Open Sans", sans-serif;
 }
@@ -12,40 +13,77 @@ h1 {
 
 h2 {
   font-size: 20px;
-}
-
-p,
-h2 {
   font-family: var(--secondary-font-family);
   color: var(--primary-color);
   line-height: 2;
   font-weight: normal;
 }
 
-.projects-button {
+p {
+  font-size: 14px;
+  font-family: var(--secondary-font-family);
+}
+
+a {
   margin: 20px;
   font-size: 15px;
-  color: var(--primary-color);
-  border: var(--primary-color) 1px solid;
   text-decoration: none;
   border-radius: 4px;
   padding: 10px 15px;
   transition: all 400ms ease-in-out;
 }
 
+img {
+  border-radius: 4px;
+}
+
+.projects-button {
+  color: var(--primary-color);
+  border: var(--primary-color) 1px solid;
+}
 .projects-button:hover {
-  color: aliceblue;
+  color: var(--secondary-color);
   background: var(--primary-color);
 }
 
 .introduction {
   padding: 80px 20px 60px;
-  background: #d5def5;
+  background: var(--secondary-color);
   text-align: center;
 }
 
 .introduction p {
   font-size: 24px;
-
+  color: var(--primary-color);
+  line-height: 2;
+  font-weight: normal;
   margin: 0;
+}
+
+.projects-container {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.projects-container h2 {
+  font-size: 25px;
+}
+
+.projects-container p {
+  margin-bottom: 30px;
+  opacity: 0.8;
+  line-height: 25px;
+}
+
+.projects-container a {
+  color: #ffffff;
+  background: var(--primary-color);
+}
+
+.projects-container a:hover {
+  color: var(--primary-color);
+  background: #ffffff;
+
+  border: var(--primary-color) 1px solid;
 }
