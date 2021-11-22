@@ -31,6 +31,7 @@ a {
   border-radius: 4px;
   padding: 10px 15px;
   transition: all 400ms ease-in-out;
+  text-align: center;
 }
 
 img {
@@ -61,9 +62,9 @@ img {
 }
 
 .projects-container {
-  text-align: center;
   padding: 20px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .projects-container h2 {
@@ -79,11 +80,44 @@ img {
 .projects-container a {
   color: #ffffff;
   background: var(--primary-color);
+  margin: auto;
 }
 
 .projects-container a:hover {
   color: var(--primary-color);
   background: #ffffff;
-
   border: var(--primary-color) 1px solid;
+}
+
+@media (max-width: 968px) {
+  h1 {
+    font-size: 50px;
+  }
+
+  .projects-container h2,
+  h2 {
+    font-size: 20px;
+  }
+
+  .introduction {
+    padding: 40px 10px 30px;
+  }
+
+  .introduction p {
+    font-size: 20px;
+  }
+
+  .project-container {
+    padding: 0;
+  }
+
+  .project-description {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1200px) {
+  .project-description {
+    padding-top: 20px;
+  }
 }
