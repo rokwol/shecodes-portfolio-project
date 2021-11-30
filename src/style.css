@@ -1,7 +1,6 @@
 :root {
   --primary-color: #430f58;
   --secondary-color: #d5def5;
-  --accent-color: #ebf0fd;
   --font-color: #6a158b;
   --default-font-family: "Playfair Display", serif;
   --secondary-font-family: "Open Sans", sans-serif;
@@ -23,7 +22,7 @@ h2 {
 
 h4 {
   font-size: 36px;
-  font-family: var(--secondary-font-family);
+  font-family: var(--default-font-family);
 }
 
 p {
@@ -126,7 +125,7 @@ nav a:hover,
   padding: 60px 20px 40px;
   margin-bottom: 20px;
   text-align: center;
-  background-color: var(--accent-color);
+  background-color: var(--secondary-color);
 }
 
 .info h1 {
@@ -218,7 +217,7 @@ footer .work-contact-container {
   }
 
   .introduction {
-    padding: 30px 10px 20px;
+    padding: 20px 10px 30px;
   }
 
   .introduction h2 {
