@@ -2,6 +2,7 @@
   --primary-color: #430f58;
   --secondary-color: #d5def5;
   --accent-color: #ebf0fd;
+  --font-color: #6a158b;
   --default-font-family: "Playfair Display", serif;
   --secondary-font-family: "Open Sans", sans-serif;
 }
@@ -18,6 +19,11 @@ h2 {
   color: var(--primary-color);
   line-height: 1.5;
   font-weight: normal;
+}
+
+h4 {
+  font-size: 36px;
+  font-family: var(--secondary-font-family);
 }
 
 p {
@@ -46,7 +52,7 @@ a {
 
 nav a:hover,
 .active {
-  color: #340c44;
+  color: var(--font-color);
 }
 .logo {
   max-height: 80px;
@@ -55,7 +61,7 @@ nav a:hover,
 }
 
 .projects-button {
-  font-size: 15px;
+  font-size: 16px;
   text-decoration: none;
   border-radius: 4px;
   padding: 10px 15px;
@@ -96,9 +102,13 @@ nav a:hover,
 }
 
 .projects-section {
-  margin-top: 80px;
+  margin-top: 60px;
   margin-bottom: 80px;
   text-align: center;
+}
+
+.projects-section .row {
+  margin-top: 20px;
 }
 
 .project-description p {
@@ -137,6 +147,54 @@ nav a:hover,
   line-height: 25px;
 }
 
+footer {
+  margin: 20px 0 40px;
+}
+
+footer .contact-box {
+  background: var(--secondary-color);
+  padding: 40px 120px 40px;
+  border-radius: 10px;
+}
+
+footer .contact-box p {
+  margin: 10px 5px 0;
+  font-size: 20px;
+}
+
+footer .contact-box a {
+  font-size: 20px;
+  padding: 13px 25px;
+}
+
+footer .email-link {
+  margin-top: 20px;
+  font-size: 25px;
+}
+
+footer .email-link:hover {
+  color: var(--font-color);
+}
+
+footer .social-links a {
+  margin: 20px;
+  padding: 10px 18px;
+  border-radius: 50%;
+  font-size: 25px;
+  color: var(--primary-color);
+  background: var(--secondary-color);
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: var(--secondary-color);
+  background: var(--primary-color);
+}
+
+footer .work-contact-container {
+  margin-top: 30px;
+}
+
 @media (max-width: 990px) {
   h1 {
     font-size: 40px;
@@ -173,7 +231,7 @@ nav a:hover,
 
   .projects-section {
     margin-top: 40px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
   }
 
   .info-container {
@@ -206,6 +264,11 @@ nav a:hover,
   a {
     padding: 0;
     font-size: 14px;
+  }
+
+  footer .email-link {
+    margin-top: 0;
+    font-size: 20px;
   }
 }
 
